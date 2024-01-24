@@ -1,0 +1,282 @@
+@font-face {
+  font-family: "geo-font-500";
+  src: url(./fonts/NotoSansGeorgian-Medium.ttf);
+}
+
+@font-face {
+  font-family: "geo-font-700";
+  src: url(./fonts/NotoSansGeorgian-Bold.ttf);
+}
+
+@font-face {
+  font-family: "geo-font-900";
+  src: url(./fonts/NotoSansGeorgian-ExtraBold.ttf);
+}
+
+main {
+  height: 100vh;
+}
+
+header {
+  background-color: #1a1e1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  font-family: "geo-font-500";
+}
+
+.nav-bar {
+  color: #fff;
+}
+
+.nav-bar li:hover {
+  color: #00a3e0;
+  cursor: pointer;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+}
+.nav-bar li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.bg {
+  background-image: url(./assetts/tbc-bg.webp);
+  font-size: 42px;
+  color: rgb(244, 244, 244);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.bg h1 {
+  padding: 100px 0;
+  margin-left: 250px;
+  font-family: "geo-font-700";
+}
+
+.info p {
+  color: rgb(244, 244, 244);
+  font-size: 28px;
+  padding-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.6em;
+}
+.info {
+  background-color: #2b2b2b;
+  padding: 50px 250px;
+  font-family: "geo-font-500";
+}
+.amore {
+  text-decoration: none;
+  color: #00a3e0;
+  font-family: "geo-font-700";
+  font-size: 18px;
+}
+
+.info a:hover,
+.faq-head a:hover {
+  color: #aaaaaa;
+  transition: color 0.4s;
+}
+.courses {
+  background-color: #161616;
+  color: #f4f4f4;
+  padding: 50px 250px;
+  font-family: "geo-font-500";
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px;
+}
+.h1courses {
+  font-size: 24px;
+  padding: 0 0 80px;
+}
+.course {
+  border: 1px solid #555555;
+  border-radius: 15px;
+  font-size: 14px;
+  overflow: hidden;
+}
+.main-img {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.course h2 {
+  padding: 30px 0 30px 20px;
+  font-size: 20px;
+}
+.course h3 {
+  padding: 0 0 100px 20px;
+  font-size: 16px;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  gap: 5px;
+  color: #00a3e0;
+  padding-bottom: 30px;
+}
+.more p {
+  cursor: pointer;
+  font-size: 18px;
+}
+.more p:hover {
+  color: #017ba9;
+  transition: color 0.4s;
+}
+
+.faq {
+  padding: 0 300px;
+  background-color: #161616;
+  color: #fff;
+  font-family: "geo-font-500";
+  line-height: 30px;
+  overflow: hidden;
+}
+
+.faq-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 24px;
+}
+.faq-head {
+  padding-top: 50px;
+}
+.faq-head a {
+  color: #00a3e0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.accordion h1 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.inside {
+  margin: 0 30px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.inside span {
+  font-family: "geo-font-900";
+}
+
+hr {
+  margin: 30px 0;
+  opacity: 20%;
+  background: #2b2b2b;
+}
+
+.ans-one,
+.ans-two,
+.ans-three {
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+.ques-one,
+.ques-two,
+.ques-three {
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1a1e1f;
+  color: #fff;
+  padding: 0 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-second {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-first {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.footer-first img {
+  width: 130px;
+}
+
+.fb {
+  margin-right: 5px;
+}
+.footer-second button {
+  font-family: "geo-font-500";
+  color: #fff;
+  background-color: #02aef3;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+.footer-second {
+  align-items: end;
+}
+
+.footer-second button:hover {
+  background-color: #d5d5d5;
+  color: #ad885f;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+.soc-media img:hover {
+  cursor: pointer;
+}
+.onhover:hover {
+  cursor: pointer;
+  color: #aaaaaa;
+  transition: color 0.4s;
+}
+
+.carr h1 {
+  padding-bottom: 30px;
+}
+.carr {
+  background-color: #2b2b2b;
+  color: #fff;
+  padding: 50px 250px;
+  font-family: "geo-font-500";
+}
+
+.set {
+  display: flex;
+  justify-content: space-between;
+}
+.third {
+  justify-content: center;
+}
+
+.second,
+.third {
+  display: none;
+}
+
+.set {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.prev-button {
+  background-color: #161616;
+  border: none;
+  width: 25px;
+  height: 25px;
+}
