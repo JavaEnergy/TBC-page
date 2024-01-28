@@ -427,6 +427,9 @@ footer {
   .footer-second button {
     padding: 10px 20px;
   }
+  footer {
+    padding: 0 100px;
+  }
 }
 @media (max-width: 630px) {
   .menu-ul {
@@ -462,5 +465,8 @@ footer {
   }
   .footer-second button {
     padding: 10px 10px;
+  }
+  footer {
+    padding: 0 50px;
   }
 }
