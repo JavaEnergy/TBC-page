@@ -3,6 +3,22 @@ const sets = carouselImages.querySelectorAll(".set");
 const nextButton = document.querySelector(".next-button");
 const prevButton = document.querySelector(".prev-button");
 
+const navSvg = document.getElementById("navSvg");
+const navX = document.getElementById("navX");
+const navUl = document.getElementById("navUl");
+
+navSvg.addEventListener("click", () => {
+  navSvg.style.display = "none";
+  navUl.style.display = "block";
+  navX.style.display = "block";
+});
+
+navX.addEventListener("click", () => {
+  navSvg.style.display = "block";
+  navUl.style.display = "none";
+  navX.style.display = "none";
+});
+
 let currentSet = 0;
 let autoSlideInterval;
 

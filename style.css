@@ -16,7 +16,10 @@
 main {
   height: 100vh;
 }
-
+.menu-svg,
+#navX {
+  display: none;
+}
 header {
   background-color: #1a1e1f;
   display: flex;
@@ -93,7 +96,6 @@ header {
   background-color: #161616;
   color: #f4f4f4;
   padding: 50px 150px;
-  /* font-family: "geo-font-500"; */
 }
 .grid {
   display: grid;
@@ -293,6 +295,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 .third {
   justify-content: center;
 }
@@ -338,4 +341,126 @@ footer {
   line-height: 1;
   margin-right: 10px;
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .set {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carr h1 {
+    padding-bottom: 50px;
+  }
+  .set img {
+    max-width: 75%;
+  }
+  .faq-head h1,
+  .faq-head a {
+    font-size: 18px;
+  }
+  .accordion h1,
+  .accordion p {
+    font-size: 14px;
+  }
+  .bg h1 {
+    font-size: 28px;
+    margin-left: 180px;
+  }
+  .info p {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 812px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .set {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carr h1 {
+    padding-bottom: 50px;
+  }
+  .info p {
+    font-size: 20px;
+  }
+  .set img {
+    max-width: 75%;
+  }
+  .bg h1 {
+    font-size: 24px;
+  }
+  .faq-head h1,
+  .faq-head a {
+    font-size: 18px;
+  }
+  .accordion h1,
+  .accordion p {
+    font-size: 14px;
+  }
+  .bg h1 {
+    font-size: 28px;
+    margin-left: 180px;
+  }
+  .info p {
+    font-size: 24px;
+  }
+  .faq {
+    padding: 30px 100px;
+  }
+  .info {
+    padding: 50px 100px;
+  }
+  .courses {
+    padding: 50px 130px;
+  }
+  .footer-second button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 630px) {
+  .menu-ul {
+    width: 160px;
+    display: none;
+  }
+  .menu-ul li {
+    padding-top: 12px;
+    cursor: pointer;
+  }
+  .menu-svg {
+    display: block;
+    cursor: pointer;
+  }
+  #navX {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    transform: translate(100%, 50%);
+  }
+  .bg h1 {
+    font-size: 16px;
+    margin-left: 180px;
+  }
+  .info p {
+    font-size: 16px;
+  }
+  .info {
+    padding: 30px 50px;
+  }
+  .courses {
+    padding: 30px 100px;
+  }
+  .footer-second button {
+    padding: 10px 10px;
+  }
 }
