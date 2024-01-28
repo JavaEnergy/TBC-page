@@ -16,7 +16,7 @@ const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
     currentSet = (currentSet + 1) % sets.length;
     slideSets();
-  }, 4000);
+  }, 8000);
 };
 
 const stopAutoSlide = () => {
@@ -43,16 +43,22 @@ var lastClickedAnswer = null;
 
 function toggleAnswer(answerClass) {
   var answer = document.querySelector("." + answerClass);
+  var arrow = answer.previousElementSibling.querySelector(".arrow");
 
   if (lastClickedAnswer && lastClickedAnswer !== answer) {
-    lastClickedAnswer.style.display = "none";
+    lastClickedAnswer.style.height = "0px";
+    lastClickedAnswer.previousElementSibling
+      .querySelector(".arrow")
+      .classList.remove("rotate");
   }
 
-  if (answer.style.display === "none" || answer.style.display === "") {
-    answer.style.display = "block";
+  if (answer.style.height === "0px" || answer.style.height === "") {
+    answer.style.height = answer.scrollHeight + "px";
+    arrow.classList.add("rotate");
     lastClickedAnswer = answer;
   } else {
-    answer.style.display = "none";
+    answer.style.height = "0px";
+    arrow.classList.remove("rotate");
     lastClickedAnswer = null;
   }
 }

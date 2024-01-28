@@ -24,6 +24,11 @@ header {
   justify-content: space-around;
   padding: 30px;
   font-family: "geo-font-500";
+  position: fixed;
+  width: 100%;
+  opacity: 95%;
+  top: 0;
+  z-index: 99;
 }
 
 .nav-bar {
@@ -50,6 +55,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  /* padding: 100px; */
+  margin-top: 95px;
 }
 
 .bg h1 {
@@ -67,7 +74,7 @@ header {
 }
 .info {
   background-color: #2b2b2b;
-  padding: 50px 250px;
+  padding: 50px 150px;
   font-family: "geo-font-500";
 }
 .amore {
@@ -85,8 +92,8 @@ header {
 .courses {
   background-color: #161616;
   color: #f4f4f4;
-  padding: 50px 250px;
-  font-family: "geo-font-500";
+  padding: 50px 150px;
+  /* font-family: "geo-font-500"; */
 }
 .grid {
   display: grid;
@@ -103,6 +110,12 @@ header {
   border-radius: 15px;
   font-size: 14px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.more {
+  margin-top: auto;
 }
 .main-img {
   width: 100%;
@@ -135,7 +148,7 @@ header {
 }
 
 .faq {
-  padding: 0 300px;
+  padding: 30px 200px;
   background-color: #161616;
   color: #fff;
   font-family: "geo-font-500";
@@ -149,11 +162,12 @@ header {
   align-items: center;
   margin-bottom: 40px;
   text-align: left;
-  font-size: 24px;
+  font-size: 22px;
 }
 .faq-head {
   padding-top: 50px;
 }
+
 .faq-head a {
   color: #00a3e0;
   cursor: pointer;
@@ -161,8 +175,7 @@ header {
 }
 
 .accordion h1 {
-  margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .inside {
   margin: 0 30px;
@@ -182,20 +195,31 @@ hr {
 .ans-one,
 .ans-two,
 .ans-three {
-  display: none;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: height 0.5s ease;
+}
+
+.padding {
+  padding-top: 30px;
 }
 .ques-one,
 .ques-two,
 .ques-three {
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
 }
 
 footer {
   background-color: #1a1e1f;
   color: #fff;
-  padding: 0 250px;
+  padding: 0 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -249,13 +273,20 @@ footer {
 }
 
 .carr h1 {
-  padding-bottom: 30px;
+  padding-bottom: 100px;
+  font-family: "geo-font-500";
+  font-size: 25px;
 }
 .carr {
   background-color: #2b2b2b;
   color: #fff;
-  padding: 50px 250px;
+  padding: 50px 150px;
   font-family: "geo-font-500";
+}
+
+.carousel-container {
+  padding-bottom: 30px;
+  position: relative;
 }
 
 .set {
@@ -274,9 +305,37 @@ footer {
 .set {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
+
+.third-set {
+  justify-content: center;
+}
 .prev-button {
-  background-color: #161616;
+  position: absolute;
+  top: 0%;
+  transform: translate(-250%, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 10px;
   border: none;
-  width: 25px;
-  height: 25px;
+  cursor: pointer;
+}
+
+.next-button {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  transform: translate(250%, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow {
+  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 1;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
 }
